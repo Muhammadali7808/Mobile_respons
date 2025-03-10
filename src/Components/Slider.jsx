@@ -13,7 +13,7 @@ const categories = [
   { title: "Каталог", img: img_1 },
   { title: "Акции", img: img_1 },
   { title: "Собрать ПК", img: img_1 },
-  { title: "Подарочные карты", img: img_1 },
+  { title: "Подароk", img: img_1 },
 ];
 
 export const Slider = () => {
@@ -29,7 +29,7 @@ export const Slider = () => {
         >
           {categories.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white w-full rounded-2xl shadow-md p-4 flex flex-col items-center text-center">
+              <div className="bg-white w-full rounded-2xl border border-gray-200 p-4 flex flex-col items-center text-center">
                 <img
                   src={item.img}
                   alt={item.title}

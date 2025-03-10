@@ -13,13 +13,11 @@ const Header = () => {
       <div className=" w-[400px] py-[10px] px-[6px] ">
         <div className="flex items-center justify-between py-4">
           <a href="/">
-            <img className="w-[68px] bg-auto" src={img_1} alt="img" />
+            <img className="w-[78px] bg-auto" src={img_1} alt="img" />
           </a>
           <div className="flex items-center gap-1">
             <img className="w-[20px] h-[20px]" src={img_2} alt="img" />
-            <p className="text-[#524c01] font-[14px] cursor-pointer font-[500]">
-              moskva
-            </p>
+            
           </div>
         </div>
         <div>
@@ -47,9 +45,9 @@ const Header = () => {
               />
             </div>
           </div>
-          <div>
+          {/* <div>
             <Kirish />
-          </div>
+          </div> */}
           <div>
             <Slider />
           </div>
