@@ -8,7 +8,7 @@ const Footer = () => {
       <div>
         <SocialLinks />
       </div>
-      <div className="w-full max-w-xs mb-6">
+      <div className="w-full max-w-xs  p-2">
         {/* Kategoriyalar */}
         <div>
           <h3 className="text-lg font-bold text-black">Категории</h3>

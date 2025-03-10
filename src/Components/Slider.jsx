@@ -19,7 +19,7 @@ const categories = [
 export const Slider = () => {
   return (
     <>
-      <div className="w-[400px] max-w-lg mt-[20px]">
+      <div className="w-[400px] mt-[20px]">
         <Swiper
           spaceBetween={10}
           slidesPerView={2.5}

@@ -5,9 +5,9 @@ import img_3 from "../assets/icon/img_2.jpg";
 
 const Banner_mobile = () => {
   return (
-    <>
+    <div className=" w-[400px]">
       <div
-        className="bg-cover bg-center p-10 text-center max-w-sm mx-auto mt-6"
+        className="bg-cover bg-center p-10 text-center  mx-auto mt-6"
         style={{ backgroundImage: `url(${img_1})` }}
       >
         <h2 className="text-xl font-bold text-gray-800">Redmi 12C</h2>
@@ -27,7 +27,7 @@ const Banner_mobile = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div >
         <div className="bg-white p-6 text-center max-w-sm mx-auto mt-6 shadow-lg rounded-lg overflow-hidden group relative">
           <h2 className="text-xl font-bold text-black">POCO X5 Pro 5G</h2>
           <p className="text-gray-600">
@@ -64,7 +64,7 @@ const Banner_mobile = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
