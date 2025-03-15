@@ -5,9 +5,9 @@ import img_3 from "../assets/icon/img_2.jpg";
 
 const Banner_mobile = () => {
   return (
-    <div className=" w-[400px]">
+    <div className="w-full md:w-[800px] lg:w-[1200px] mx-auto">
       <div
-        className="bg-cover bg-center p-10 text-center  mx-auto mt-6"
+        className="bg-cover bg-center p-10 text-center mx-auto mt-6"
         style={{ backgroundImage: `url(${img_1})` }}
       >
         <h2 className="text-xl font-bold text-gray-800">Redmi 12C</h2>
@@ -27,40 +27,29 @@ const Banner_mobile = () => {
           </button>
         </div>
       </div>
-      <div >
-        <div className="bg-white p-6 text-center max-w-sm mx-auto mt-6 shadow-lg rounded-lg overflow-hidden group relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="bg-white p-6 text-center shadow-lg rounded-lg overflow-hidden group relative">
           <h2 className="text-xl font-bold text-black">POCO X5 Pro 5G</h2>
           <p className="text-gray-600">
-            Процессор Snapdragon® 778G | 120 Гц <br />
-            FHD+ AMOLED DotDisplay
+            Процессор Snapdragon® 778G | 120 Гц <br /> FHD+ AMOLED DotDisplay
           </p>
           <div className="flex justify-center gap-4 mt-4 font-semibold">
-            <button className="text-[#fea306] hover:underline">
-              Купить &gt;
-            </button>
-            <button className="text-[#090909] hover:underline">
-              Узнать больше &gt;
-            </button>
+            <button className="text-[#fea306] hover:underline">Купить &gt;</button>
+            <button className="text-[#090909] hover:underline">Узнать больше &gt;</button>
           </div>
-          <div className="mt-4 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
-            <img src={img_2} alt="POCO X5 Pro 5G" className="w-[430px]" />
+          <div className="mt-6 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+            <img src={img_2} alt="POCO X5 Pro 5G" className="w-full" />
           </div>
         </div>
-        <div className="bg-white p-6 text-center max-w-sm mx-auto mt-6 shadow-lg rounded-lg overflow-hidden group relative">
+        <div className="bg-white p-6 text-center shadow-lg rounded-lg overflow-hidden group relative">
           <h2 className="text-xl font-bold text-black">Серия Xiaomi TV A2</h2>
-          <p className="text-gray-600">
-            Умная работа, безграничное изображение
-          </p>
+          <p className="text-gray-600">Умная работа, безграничное изображение</p>
           <div className="flex justify-center gap-4 mt-4 font-semibold">
-            <button className="text-[#fea306] hover:underline">
-              Купить &gt;
-            </button>
-            <button className="text-[#090909] hover:underline">
-              Узнать больше &gt;
-            </button>
+            <button className="text-[#fea306] hover:underline">Купить &gt;</button>
+            <button className="text-[#090909] hover:underline">Узнать больше &gt;</button>
           </div>
-          <div className="mt-4 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
-            <img src={img_3} alt="Xiaomi TV A2" className="w-[430px]" />
+          <div className="mt-6 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+            <img src={img_3} alt="Xiaomi TV A2" className="w-full" />
           </div>
         </div>
       </div>
