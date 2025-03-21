@@ -1,34 +1,14 @@
 import React from "react";
-import img_1 from "../assets/icon/banner_img.jpg";
-import img_2 from "../assets/icon/img_slider.jpg";
+import img_2 from "../assets/icon/img_slider.png";
 import img_3 from "../assets/icon/img_2.jpg";
 
 const Banner_mobile = () => {
   return (
-    <div className="w-full md:w-[800px] lg:w-[1200px] mx-auto">
-      <div
-        className="bg-cover bg-center p-10 text-center mx-auto mt-6"
-        style={{ backgroundImage: `url(${img_1})` }}
-      >
-        <h2 className="text-xl font-bold text-gray-800">Redmi 12C</h2>
-        <p className="text-gray-400">
-          MediaTek Helio G85 | Иммерсивный дисплей 6,71"
-        </p>
-        <p className="text-lg font-semibold mt-2 text-white">
-          От <span className="text-yellow-300">6 990 ₽</span>{" "}
-          <span className="text-gray-400 line-through">9 990 ₽</span>
-        </p>
-        <div className="flex justify-center cursor-pointer gap-4 mt-4">
-          <button className="bg-black text-white px-4 py-2 rounded-lg">
-            Купить
-          </button>
-          <button className="border border-gray-400 text-gray-500 px-4 py-2 rounded-lg">
-            Узнать больше
-          </button>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <div className="bg-white p-6 text-center shadow-lg rounded-lg overflow-hidden group relative">
+    <div className="w-full lg:w-[1500px] mx-auto p-2">
+      {/* Desktop grid */}
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-2 mt-6">
+        {/* POCO X5 Pro 5G */}
+        <div className="cursor-pointer flex flex-col justify-between items-center text-center p-6 border-none rounded-lg shadow-lg bg-white transition-transform duration-300 hover:scale-105 md:w-[716px] md:h-[476px] overflow-hidden">
           <h2 className="text-xl font-bold text-black">POCO X5 Pro 5G</h2>
           <p className="text-gray-600">
             Процессор Snapdragon® 778G | 120 Гц <br /> FHD+ AMOLED DotDisplay
@@ -37,19 +17,29 @@ const Banner_mobile = () => {
             <button className="text-[#fea306] hover:underline">Купить &gt;</button>
             <button className="text-[#090909] hover:underline">Узнать больше &gt;</button>
           </div>
-          <div className="mt-6 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
-            <img src={img_2} alt="POCO X5 Pro 5G" className="w-full" />
+          <div className="w-full h-[250px] md:h-[300px] flex justify-center items-center overflow-hidden">
+            <img
+              src={img_2}
+              alt="POCO X5 Pro 5G"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
-        <div className="bg-white p-6 text-center shadow-lg rounded-lg overflow-hidden group relative">
+
+        {/* Xiaomi TV A2 */}
+        <div className="cursor-pointer flex flex-col justify-between items-center text-center p-6 border-none rounded-lg shadow-lg bg-white transition-transform duration-300 hover:scale-105 md:w-[716px] md:h-[476px] overflow-hidden">
           <h2 className="text-xl font-bold text-black">Серия Xiaomi TV A2</h2>
           <p className="text-gray-600">Умная работа, безграничное изображение</p>
           <div className="flex justify-center gap-4 mt-4 font-semibold">
             <button className="text-[#fea306] hover:underline">Купить &gt;</button>
             <button className="text-[#090909] hover:underline">Узнать больше &gt;</button>
           </div>
-          <div className="mt-6 transform transition-transform duration-500 ease-in-out group-hover:scale-110">
-            <img src={img_3} alt="Xiaomi TV A2" className="w-full" />
+          <div className="w-full h-[250px] md:h-[300px] flex justify-center items-center overflow-hidden">
+            <img
+              src={img_3}
+              alt="Xiaomi TV A2"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>

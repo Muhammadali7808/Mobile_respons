@@ -7,6 +7,8 @@ import xabar from "../../assets/icon/xabar.svg";
 import Kirish from "../../Components/boyti";
 import Slider from "../../Components/Slider";
 import Banner_mobile from "../../Components/banner";
+import Banner_mob from "../../Components/banners";
+// import '../index.css';
 
 const Header = () => {
   return (
@@ -21,12 +23,79 @@ const Header = () => {
               alt="logo"
             />
           </a>
+
+          <div className="hidden lg:flex items-center gap-6">
+            <a href="#" className="text-gray-700 hover:text-orange-500">
+              Акции
+            </a>
+            <a href="#" className="text-gray-700 hover:text-orange-500">
+              Магазины
+            </a>
+            <a href="#" className="text-gray-700 hover:text-orange-500">
+              Доставка
+            </a>
+
+            {/* Dropdown menyu */}
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-orange-500 flex items-center">
+                Покупателям <span className="ml-1">▾</span>
+              </button>
+
+              {/* Dropdown tarkibi */}
+              <div
+                className="absolute left-0 mt-2 w-52 bg-white z-10 shadow-lg rounded-md p-2 
+                      opacity-0 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:visible"
+              >
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Доставка
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Подарочные карты
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Бонусная программа
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Узнать статус заказа
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Обмен, возврат, гарантия
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Кредиты
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Сервисные центры
+                </a>
+              </div>
+            </div>
+
+            
+          </div>
+
           <div className="flex items-center gap-4">
-            <img
-              className="w-[20px] md:w-[30px] lg:w-[40px] h-auto"
-              src={img_2}
-              alt="icon"
-            />
+           <p className="title_use">cdffd</p>
           </div>
         </div>
 
@@ -49,9 +118,9 @@ const Header = () => {
           </div>
 
           {/* Chat Tugmasi */}
-          <div className="w-[44px] h-[44px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] bg-[#f7f7f7] rounded-[8px] flex items-center justify-center">
+          <div className="w-[44px] h-[44px] md:w-[50px] md:h-[50px] lg:w-[48px] lg:h-[48px] bg-[#f7f7f7] rounded-[8px] flex items-center justify-center">
             <img
-              className="w-[34px] h-[34px] md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[48px]"
+              className="w-[34px] h-[34px] md:w-[40px] md:h-[40px] lg:w-[30px] lg:h-[30px]"
               src={xabar}
               alt="chat"
             />
@@ -63,8 +132,8 @@ const Header = () => {
           <Slider />
         </div>
       </div>
+      <Banner_mob/>
 
-      {/* Mobil Banner */}
       <Banner_mobile />
     </div>
   );

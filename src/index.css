@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
+    user-select: none;
 }
 
 a{
@@ -18,7 +19,16 @@ li,ul{
 
 
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.swiper-wrapper{
+    height: 220px;
+}
+
+.title_use{
+    user-select: none;
+    color: #fff;
 }
