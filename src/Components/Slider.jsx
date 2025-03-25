@@ -59,7 +59,7 @@ function Slider() {
     },
     {
       title: "Бытовая техника",
-      description: "олодильники, микроволновки и другое",
+      description: "Холодильники, микроволновки и другое",
       image: img9,
       bgColor: "bg-red-50",
     },
@@ -67,35 +67,37 @@ function Slider() {
 
   return (
     <div className="bg-white flex justify-center">
-      <div className="container w-[1270px] px-4 py-9">
+      <div className="container w-full max-w-[1270px] px-4 py-9">
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={10}
-          slidesPerView={1} // Default holatda 1 ta slayd ko'rsatiladi
+          slidesPerView={2} // Default for mobile
           navigation
           autoplay={{ delay: 2000 }}
           className="mySwiper h-[220px]"
           breakpoints={{
-            320: { slidesPerView: 1 }, // Mobil (faqat 1 ta)
-            640: { slidesPerView: 2 }, // Planshet (ham 1 ta)
+            320: { slidesPerView: 2 }, // Mobil (2 ta slayd yonma-yon)
+            480: { slidesPerView: 3 }, // Kichik planshet (3 ta)
+            640: { slidesPerView: 4 }, // Katta planshet (4 ta)
+            768: { slidesPerView: 5 }, // O‘rta ekran (5 ta)
             1024: { slidesPerView: 6 }, // Desktop (6 ta)
           }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`${slide.bgColor} w-[183px] h-[206px] rounded-xl p-4 shadow-sm cursor-pointer transition-transform hover:scale-103 flex flex-col justify-between items-center`}
+                className={`${slide.bgColor} w-full max-w-[150px] h-[180px] rounded-xl p-4 shadow-sm cursor-pointer transition-transform hover:scale-105 flex flex-col justify-between items-center md:max-w-[180px] md:h-[200px] lg:max-w-[183px] lg:h-[206px]`}
               >
-                <div className="">
-                  <h3 className="text-sm font-bold ml-0 text-gray-800">
+                <div className="text-center">
+                  <h3 className="text-sm font-bold text-gray-800 md:text-base lg:text-sm">
                     {slide.title}
                   </h3>
-                  <p className="text-xs text-gray-600">{slide.description}</p>
+                  <p className="text-xs text-gray-600 md:text-sm lg:text-xs">{slide.description}</p>
                 </div>
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-20 h-20 mr-[-80px] object-contain"
+                  className="w-[60px] h-[60px] object-contain md:w-[70px] md:h-[70px] lg:w-[70px] lg:h-[70px]"
                 />
               </div>
             </SwiperSlide>

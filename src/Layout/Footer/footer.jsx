@@ -17,7 +17,7 @@ function Footer() {
         </h2>
 
         {/* Social Media Icons */}
-        <div className="flex flex-col md:flex-row justify-center items-center md:gap-10 space-y-4 md:space-y-0 mb-10 md:gap-[170px]">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 mb-10 md:gap-[170px]">
           <div className="flex gap-2 items-center text-yellow-500">
             <FaYoutube size={40} />
             <div>
