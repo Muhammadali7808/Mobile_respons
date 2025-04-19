@@ -32,7 +32,7 @@ const Header = () => {
               Магазины
             </a>
             <a href="#" className="text-gray-700 hover:text-orange-500">
-              Доставка
+              Наш партнёр
             </a>
 
             {/* Dropdown menyu */}
@@ -50,7 +50,7 @@ const Header = () => {
                   href="#"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  Доставка
+                  Наш партнёр
                 </a>
                 <a
                   href="#"
@@ -90,12 +90,10 @@ const Header = () => {
                 </a>
               </div>
             </div>
-
-            
           </div>
 
           <div className="flex items-center gap-4">
-           <p className="title_use">cdffd</p>
+            <p className="title_use">cdffd</p>
           </div>
         </div>
 
@@ -132,7 +130,7 @@ const Header = () => {
           <Slider />
         </div>
       </div>
-      <Banner_mob/>
+      <Banner_mob />
 
       <Banner_mobile />
     </div>
