@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-white text-gray-800 py-10">
+    <footer className="bg-white text-gray-800 py-10 ">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-lg font-bold mb-6">
           Мы с Вами всегда на связи
@@ -45,7 +45,9 @@ function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border-t pt-6">
           <div>
             <h3 className="font-bold">Контакты</h3>
-            <p className="text-yellow-500 font-bold text-lg">+7(499) 322-30-20</p>
+            <p className="text-yellow-500 font-bold text-lg">
+              +7(499) 322-30-20
+            </p>
             <p className="flex items-center gap-2">
               <FaEnvelope /> technodeus.ru@gmail.com
             </p>
@@ -59,13 +61,22 @@ function Footer() {
 
           <div>
             <h3 className="font-bold">Категории</h3>
-            <p>Наш партнёр</p>
-            <p>Подарочные карты</p>
-            <p>Бонусная программа</p>
-            <p>Узнать статус заказа</p>
-            <p>Обмен, возврат, гарантия</p>
-            <p>Кредиты</p>
-            <p>Сервисные центры</p>
+            <div>
+            </div>
+            <div>
+              <a className="text-gray-700 hover:text-orange-500">Подарочные карты</a>
+            </div>
+            <div>
+              <a className="text-gray-700 hover:text-orange-500">Бонусная программа</a>
+            </div>
+            
+            <div>
+              <a className="text-gray-700 hover:text-orange-500">Обмен, возврат, гарантия</a>
+            </div>
+            
+            <div>
+              <a className="text-gray-700 hover:text-orange-500">Сервисные центры</a>
+            </div>
           </div>
 
           <div>
@@ -87,13 +98,14 @@ function Footer() {
         </div>
 
         {/* Footer Disclaimer */}
-        <p className="text-center text-gray-500 text-sm mt-6">
+        {/* <p className="text-center text-gray-500 text-sm mt-6">
           Сайт носит сугубо информационный характер и не является публичной
           офертой, определяемой Статьей 437 (2) ГК РФ.
-        </p>
+        </p> */}
       </div>
     </footer>
   );
 }
 
 export default Footer;
+

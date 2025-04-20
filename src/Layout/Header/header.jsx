@@ -8,6 +8,7 @@ import Kirish from "../../Components/boyti";
 import Slider from "../../Components/Slider";
 import Banner_mobile from "../../Components/banner";
 import Banner_mob from "../../Components/banners";
+import Slider_1 from "../../Components/slider_1";
 // import '../index.css';
 
 const Header = () => {
@@ -50,12 +51,6 @@ const Header = () => {
                   href="#"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  Наш партнёр
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
                   Подарочные карты
                 </a>
                 <a
@@ -68,19 +63,7 @@ const Header = () => {
                   href="#"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  Узнать статус заказа
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
                   Обмен, возврат, гарантия
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Кредиты
                 </a>
                 <a
                   href="#"
@@ -127,7 +110,15 @@ const Header = () => {
 
         {/* Slider */}
         <div className="mt-6">
-          <Slider />
+          {/* Mobilda ko‘rinadi, desktopda yashirin */}
+          <div className="block md:hidden">
+            <Slider_1 />
+          </div>
+
+          {/* Desktopda ko‘rinadi, mobilda yashirin */}
+          <div className="hidden md:block">
+            <Slider />
+          </div>
         </div>
       </div>
       <Banner_mob />
